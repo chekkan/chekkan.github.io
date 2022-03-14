@@ -1,28 +1,24 @@
 ---
 layout: post
-title:  Migrate Blog to Jekyll and Hosted on GitHub Pages
+title:  Migrate Blog to Jekyll hosted on GitHub Pages
 ---
 
 I've had this blog migrated so many times in the past. I had it running in 
-Jekyll and GitHub pages when I first started blogging. 
-
-Then I switched to using Ghost blogging platform self hosted.
-
-I switched out of Ghost in favour of Gatsby to get on the Single page app train.
-Hosted the blog on Netlify with its free tier. 
-
-I then switched back to Ghost and self hosting it on Kubernetes.
-
-And now, I am back to full circle running the site using Jekyll and Hosting it 
-back on GitHub pages.
+Jekyll and GitHub pages when I first started blogging. Then I switched to self
+hosting with Ghost blog engine. I switched out of Ghost in favour of Gatsby
+while I was doing more ReactJS development. Hosted the blog on Netlify with its
+free tier. I then switched back to Ghost and self hosting it on Kubernetes.
 
 I even considered using the Hey World blogging platform for a while. But, that 
 was way too simple for me. It has got potentials and I will wait and see if it 
-grows into something more to meet my needs in the future. 
+grows into something more that meets my needs in the future. 
+
+And now, I am back to how it all began, running the site using Jekyll and
+hosting it back on GitHub pages. 
 
 ## Taking a break from Ghost
 I am not using the full feature offered by Ghost. I don't need mostly all of 
-them. I don't have subscriber, I don't need to send out emails to anyone. I 
+them. I don't have subscriber, I don't need to send out emails to anyone. And I 
 don't plan to use the blog as a revenue stream. 
 
 I enjoyed the default theme, I loved its integration with cloudflare for image 
@@ -33,20 +29,56 @@ Running a kubernetes cluster for my blog and couple of side projects is turning
 out to be expensive. I would like to have the oppertunity to turn the 
 Kubernetes Cluster off without bringing down my blog.
 
-## Why Jekyll
-I think the main reason is because of its simplicity. I already have tools 
-needed for running jekyll on my workstation. I am becoming more familiar with 
-the ecosystem nowadays. I like the concept of simply HTML getting served. That's
-all I need from a Blog. There is no need for server rendering, no need for lots 
-of JavaScript to be executing in my reader's Browser.
+## Why Jekyll?
+I think the main reason for migrating to Jekyll blog engine is because of its
+simplicity. I already have tools needed for running jekyll on my workstation. I
+am becoming more familiar with the ecosystem nowadays. I like the concept of 
+simply HTML getting served. That's all I need from a Blog. There is no need for 
+server rendering, no need for lots of JavaScript to be executing in my reader's 
+Browser.
 
-I like the freedom of writting on Markdown, saving it to GIT and having a bit 
-more control over the customization. 
+I like the freedom of writing in Markdown, saving it to GIT and having a bit 
+more control over the customizations. I will have to make the site look more 
+appealing, some UI improvements, including taking care of my mobile readers.
+I am losing some nice functionalities with this migration. There is not alot 
+that comes with the minima theme. So, will be taking some time to polish the 
+look and feel of the site. 
 
-I will have to make the site look more appealing. Need to do some UI 
-improvements. Have to take care of my mobile audiences. 
+## Approach
+In order to migrate the posts from ghost, I used the [jekyll_ghost_importer][1] 
+gem pointing to the `.json` file that I exported from Ghost admin UI.
+
+### URLs
+The gem however, did not migrate over the urls correctly for me. I ended up with 
+jekyll's default post format `yyyy-mm-dd-title` urls. Therefore, I had to 
+manually set the `permalink` front matter attribute. This wasn't so bad as I 
+only had around 34 blog posts. 
+
+### Code blocks
+I also had to also add the correct `highlight language` tag for my code blocks 
+in existing posts.
+
+```
+{% raw %}
+{% highlight csharp %}
+...
+{% endhighlight %}
+{% endraw %}
+```
+
+### Images
+[jekyll_ghost_importer][1] also imports the images as html tags, and with fixed 
+width and height which looks streched out in Jekyll with minima theme. I had to 
+convert each one to the markdown format of `![alt](url) "title"` format.
 
 ## Conclusion
 Who knows, I might decide to move away from Jekyll in some time in the future. 
 But for now, I enjoy the simplicity of just writing and pushing the content to 
 the world.
+
+I have blogged quite a lot already on migrating from one platform to another. I 
+have to stop migrating the blog and stick to a platform for a substantial 
+amount of time. And I am hopefull that this might be it. 
+
+
+[1]: <https://github.com/eloyesp/jekyll_ghost_importer>
