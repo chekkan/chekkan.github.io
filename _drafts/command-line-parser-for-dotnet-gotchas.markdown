@@ -5,6 +5,9 @@ title: Command Line Parser for dotnet Gotchas
 
 I am talking of course about the [CommandLineParser](https://github.com/commandlineparser/commandline) Nuget library. Specifically, version 2.8.0 at the time of this blog post.
 
+## No support for minimal API or Dependency Injection
+At the time of writing, there is no support for Dependency Injection out of the box. 
+
 ## Change application version
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/commandlineparser/commandline/wiki/HelpText-Configuration#setting-assemblyinfo-attributes"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">HelpText Configuration · commandlineparser/commandline Wiki</div>
