@@ -54,6 +54,12 @@ jekyll's default post format `yyyy-mm-dd-title` urls. Therefore, I had to
 manually set the `permalink` front matter attribute. This wasn't so bad as I 
 only had around 34 blog posts. 
 
+Also, posts with links to other posts ended up with `__GHOST_URL__` prefix. 
+e.g. `[Part 2 - Setting up Kibana Service](__GHOST_URL__/setting-up-elasticsearch-cluster-on-kubernetes-part-2-kibana/)`.
+Therefore, make sure to find and replace these ones manually to use `post_url`
+liquid tags. 
+e.g. `[Part 2 - Setting up Kibana Service]({{ '{%' }} post_url 2018-02-13-setting-up-elasticsearch-cluster-on-kubernetes-part-2-kibana %})`.
+
 ### Code blocks
 I also had to also add the correct `highlight language` tag for my code blocks 
 in existing posts.
@@ -61,10 +67,19 @@ in existing posts.
 ```
 {% raw %}
 {% highlight csharp %}
-...
+public int Add(int a, int b) => a + b;
 {% endhighlight %}
 {% endraw %}
 ```
+
+I later found out that jekyll can also make use of 
+[GitHub Fenced Code Blocks][gh_code] syntax as well.
+
+<pre class='code'>
+<code>``` javascript
+const add = (a, b) => a + b;
+```</code>
+</pre>
 
 ### Images
 [jekyll_ghost_importer][1] also imports the images as html tags, and with fixed 
@@ -82,3 +97,4 @@ amount of time. And I am hopefull that this might be it.
 
 
 [1]: <https://github.com/eloyesp/jekyll_ghost_importer>
+[gh_code]: <https://help.github.com/articles/creating-and-highlighting-code-blocks/>
