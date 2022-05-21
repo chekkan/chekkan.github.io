@@ -34,3 +34,10 @@ public void Message_not_published()
       .Should().BeNull();
 }
 ```
+
+Another **bad practise** is to using extension methods that forces waiting till
+timeout.
+
+```csharp
+testHarness.Published.Count().Should().Be(2);
+```
