@@ -1,4 +1,5 @@
 ---
+layout: post
 title: MassTransit best practices
 ---
 
