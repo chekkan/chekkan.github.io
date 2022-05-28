@@ -3,6 +3,7 @@ layout: post
 title: MiniProfiler for dotnet with NHibernate MSSQL Driver
 date: '2021-11-05 22:50:08'
 permalink: mini-profiler-for-dotnet-with-nhibernate
+cover: https://res.cloudinary.com/chekkan/image/upload/q_auto:good/Cover-Image.png
 tags:
 - dotnet
 - aspnet

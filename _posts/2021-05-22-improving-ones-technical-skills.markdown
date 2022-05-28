@@ -3,6 +3,7 @@ layout: post
 title: Improving one's technical skills
 date: '2021-05-22 13:17:15'
 permalink: improving-ones-technical-skills
+cover: https://images.unsplash.com/photo-1600195077909-46e573870d99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGxlYXJufGVufDB8fHx8MTYyMTY4OTUzOQ&ixlib=rb-1.2.1&q=80&w=2000
 tags:
 - software-engineering
 ---

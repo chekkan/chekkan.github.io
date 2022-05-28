@@ -4,6 +4,7 @@ title: Access response headers in HTTP Fetch API with Serverless Framework and
   AWS Lambda
 permalink: http-fetch-response-headers-with-serverless-and-aws-lambda
 date: '2017-11-30 00:23:00'
+cover: https://images.unsplash.com/photo-1508802153073-e549b30d1ac0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 tags:
 - aws
 - serverless-framework

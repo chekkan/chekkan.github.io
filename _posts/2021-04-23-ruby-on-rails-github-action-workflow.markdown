@@ -3,6 +3,7 @@ layout: post
 title: Ruby on Rails GitHub Action Workflow
 date: '2021-04-23 22:36:43'
 permalink: ruby-on-rails-github-action-workflow
+cover: https://images.unsplash.com/photo-1522776851755-3914469f0ca2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDQxfHxydWJ5JTIwb24lMjByYWlsc3xlbnwwfHx8fDE2MTkyMTcyMjA&ixlib=rb-1.2.1&q=80&w=2000
 tags:
 - rails
 - ruby

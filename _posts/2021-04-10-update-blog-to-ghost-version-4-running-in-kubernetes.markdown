@@ -3,6 +3,7 @@ layout: post
 title: Update blog to ghost version 4 running in Kubernetes
 date: '2021-04-10 21:11:25'
 permalink: update-blog-to-ghost-version-4-running-in-kubernetes
+cover: https://res.cloudinary.com/chekkan/image/upload/q_auto:good/ghostv3-kubernetes-ghostv4--2-.png
 tags:
 - kubernetes
 - ghost-tag

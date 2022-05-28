@@ -3,6 +3,7 @@ layout: post
 title: Thoughts on TDD
 date: '2021-04-29 21:00:09'
 permalink: thoughts-on-tdd
+cover: https://images.unsplash.com/photo-1522435229388-6f7a422cd95b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHRoaW5raW5nfGVufDB8fHx8MTYxOTcyOTk3Ng&ixlib=rb-1.2.1&q=80&w=2000
 tags:
 - testing
 - integration-test

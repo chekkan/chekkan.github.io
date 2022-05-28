@@ -3,6 +3,7 @@ layout: post
 title: GitHub Workflow for Haskell Yesod Docker image with Stack
 date: '2020-07-08 22:30:00'
 permalink: github-workflow-haskell-yesod-docker-stack
+cover: https://res.cloudinary.com/chekkan/image/upload/q_auto:good/yesod-haskell-github--2-.png
 tags:
 - haskell
 - webdev

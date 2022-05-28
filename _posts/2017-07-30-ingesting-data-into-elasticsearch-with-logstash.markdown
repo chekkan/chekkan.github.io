@@ -3,6 +3,7 @@ layout: post
 title: Ingesting data from Oracle DB into Elasticsearch with Logstash
 permalink: ingesting-data-into-elasticsearch-with-logstash
 date: '2017-07-30 00:19:00'
+cover: https://images.unsplash.com/photo-1591711584791-455de896b1e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHR1bm5lbHxlbnwwfHx8fDE2MjE2ODk2NTc&ixlib=rb-1.2.1&q=80&w=2000
 tags:
 - elasticsearch
 - logstash

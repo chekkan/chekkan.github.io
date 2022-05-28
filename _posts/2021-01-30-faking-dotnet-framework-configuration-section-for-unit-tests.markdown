@@ -3,6 +3,7 @@ layout: post
 title: Faking .NET Framework ConfigurationSection for Unit Tests
 date: '2021-01-30 21:44:19'
 permalink: faking-dotnet-framework-configuration-section-for-unit-tests
+cover: https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMTc3M3wwfDF8c2VhcmNofDZ8fGNvZGV8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=2000
 tags:
 - testing
 - xunit

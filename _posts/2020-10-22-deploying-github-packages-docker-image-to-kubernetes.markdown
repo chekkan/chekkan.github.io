@@ -3,6 +3,7 @@ layout: post
 title: Deploying GitHub packages docker image to Kubernetes
 date: 2020-10-22 22:17:38
 permalink: deploying-github-packages-docker-image-to-kubernetes
+cover: https://res.cloudinary.com/chekkan/image/upload/q_auto:good/docker-kubernetes-github.jpg
 tags:
 - kubernetes
 - docker

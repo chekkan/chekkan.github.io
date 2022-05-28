@@ -3,6 +3,7 @@ layout: post
 title: Using Domain Types with NHibernate
 date: '2021-11-21 22:06:21'
 permalink: using-domain-type-with-nhibernate
+cover: https://res.cloudinary.com/chekkan/image/upload/q_auto:good/NHibernate-logo.svg
 tags:
 - nhibernate
 - software-engineering
