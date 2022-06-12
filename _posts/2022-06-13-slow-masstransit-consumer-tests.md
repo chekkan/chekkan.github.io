@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Slow MassTransit not published tests
+title: Slow MassTransit Consumer tests
 tags:
 - dotnet
 - tests
+date: 2022-06-13 00:54 +0100
 ---
-
 [MassTransit][] is an open source library that is an abstraction over some of
 the popular messaging/bus technologies. I have used it for interacting with
 RabbitMQ bus and have found the experience very pleasant. 
