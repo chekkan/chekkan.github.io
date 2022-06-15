@@ -21,7 +21,7 @@ public void Message_not_published()
 {
     sut.Login(lockedOutUser);
     testHarness.Published.Select<IUserLoggedIn>()
-      .Should().BeNull();
+      .Should().BeEmpty();
 }
 ```
 
@@ -39,7 +39,7 @@ public void Message_not_published()
     using CancellationTokenSource cts = new ();
     cts.CancelAfter(100);
     testHarness.Published.Select<IUserLoggedIn>(cts.Token)
-      .Should().BeNull();
+      .Should().BeEmpty();
 }
 ```
 
