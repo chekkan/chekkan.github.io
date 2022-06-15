@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Migrate Blog to Jekyll hosted on GitHub Pages
+title: Migrate Blog to Jekyll hosted on GitHub Pages
+date: 2022-06-16 00:26 +0100
 ---
-
 I've had this blog migrated so many times in the past. I had it running in 
 Jekyll and GitHub pages when I first started blogging. Then I switched to self
 hosting with Ghost blog engine. I switched out of Ghost in favour of Gatsby
@@ -17,15 +17,15 @@ And now, I am back to how it all began, running the site using Jekyll and
 hosting it back on GitHub pages. 
 
 ## Taking a break from Ghost
-I am not using the full feature offered by Ghost. I don't need mostly all of 
-them. I don't have subscriber, I don't need to send out emails to anyone. And I 
-don't plan to use the blog as a revenue stream. 
+I was not using the full set of features offered by Ghost. I didn't need mostly
+all of them. I don't have subscriber, I don't need to send out emails to
+anyone. And I don't plan to use the blog as a revenue stream. 
 
 I enjoyed the default theme, I loved its integration with cloudflare for image 
 uploads. I am planning to continue using Cloudflare to serve the images for my
-blog.
+blog after migrating to Jekyll.
 
-Running a kubernetes cluster for my blog and couple of side projects is turning 
+Running a kubernetes cluster for my blog and couple of side projects is turned
 out to be expensive. I would like to have the oppertunity to turn the 
 Kubernetes Cluster off without bringing down my blog.
 
@@ -33,7 +33,7 @@ Kubernetes Cluster off without bringing down my blog.
 I think the main reason for migrating to Jekyll blog engine is because of its
 simplicity. I already have tools needed for running jekyll on my workstation. I
 am becoming more familiar with the ecosystem nowadays. I like the concept of 
-simply HTML getting served. That's all I need from a Blog. There is no need for 
+simply serving HTML. That's all I need from a Blog. There is no need for 
 server rendering, no need for lots of JavaScript to be executing in my reader's 
 Browser.
 
