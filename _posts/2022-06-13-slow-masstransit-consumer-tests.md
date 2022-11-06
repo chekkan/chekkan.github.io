@@ -2,13 +2,14 @@
 layout: post
 title: Slow MassTransit Consumer tests
 tags:
-- dotnet
-- tests
+  - dotnet
+  - testing
 date: 2022-06-13 00:54 +0100
 ---
+
 [MassTransit][] is an open source library that is an abstraction over some of
 the popular messaging/bus technologies. I have used it for interacting with
-RabbitMQ bus and have found the experience very pleasant. 
+RabbitMQ bus and have found the experience very pleasant.
 
 There is a pitfall that most developers fall into (myself including) when
 writing a test for MassTransit _consumer_. In the below example test, asserting
@@ -25,10 +26,10 @@ public void Message_not_published()
 }
 ```
 
-General advice 🫡  is to not write tests that asserts something didn't happen.
-Rethink how you can rewrite the test when you reach for this. 
+General advice 🫡 is to not write tests that asserts something didn't happen.
+Rethink how you can rewrite the test when you reach for this.
 
-If absolutely necessary, you can pass in an optional `CancellationToken` to 
+If absolutely necessary, you can pass in an optional `CancellationToken` to
 the `Select` method that times out after a set period.
 
 ```csharp
@@ -44,19 +45,19 @@ public void Message_not_published()
 ```
 
 You can override the default timeout value by setting `TestInactivityTimeout`
-property on the `TestHarness`. 
+property on the `TestHarness`.
 
 ```csharp
 /// <summary>
-/// Timeout specifying the elapsed time with no bus activity after which the 
+/// Timeout specifying the elapsed time with no bus activity after which the
 /// test could be completed
 /// </summary>
 public TimeSpan TestInactivityTimeout { get; set; }
 ```
 
-Another permutation of the above assertion is _counting_ the number of messages 
+Another permutation of the above assertion is _counting_ the number of messages
 published. This will also wait till the timeout period. However, `Count`
-doesn't have an _overload_ that takes in a `CancellationToken`. 
+doesn't have an _overload_ that takes in a `CancellationToken`.
 
 ```csharp
 testHarness.Published.Count().Should().Be(2);
@@ -65,8 +66,7 @@ testHarness.Published.Count().Should().Be(2);
 ---
 
 - The latest version of [MassTransit][] library at the time of writing was
-[8.0.3][].
+  [8.0.3][].
 
-
-[MassTransit]: <https://github.com/MassTransit/MassTransit>
-[8.0.3]: <https://www.nuget.org/packages/MassTransit/8.0.3>
+[masstransit]: https://github.com/MassTransit/MassTransit
+[8.0.3]: https://www.nuget.org/packages/MassTransit/8.0.3
