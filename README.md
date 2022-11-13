@@ -25,5 +25,5 @@ bundle exec jekyll draft NAME
 ```
 
 ```shell
-bundle exec jeykyll publish DRAFT_PATH
+bundle exec jekyll publish DRAFT_PATH
 ```
