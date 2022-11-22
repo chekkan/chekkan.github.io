@@ -2,7 +2,12 @@
 layout: post
 title: Developing for .NET Framework from Mac
 date: 2022-11-13 23:53 +0000
+tags:
+  - dotnet
+  - aspnet
+  - mac
 ---
+
 Hopefully not a lot of people are facing the issue of having to work and
 maintain an application thats written in .NET Framework. If you are having to,
 hopefully you've got plans to get it migrated and running on one of the latest
@@ -114,4 +119,4 @@ a test, or adding some logs, or something else entirely.
 [vagrant]: https://www.vagrantup.com/
 [mono]: https://www.mono-project.com/
 [boot camp assistant]: https://support.apple.com/en-gb/guide/bootcamp-assistant/welcome/mac
-[img_boot_camp]: https://help.apple.com/assets/61E87B81FC2FB340377F911B/61E87B82FC2FB340377F9122/en_US/0d7afc467c8c0f4b3ad0d15e9d1ce741.png
+[img_boot_camp]: https://res.cloudinary.com/chekkan/image/upload/v1669153739/0d7afc467c8c0f4b3ad0d15e9d1ce741_yrmvoa.png
