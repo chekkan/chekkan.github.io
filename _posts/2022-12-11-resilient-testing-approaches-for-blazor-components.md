@@ -137,7 +137,7 @@ extension method called `VerifyTextContaining()` on `IRenderedComponent` type.
 ```csharp
 public static class RenderedComponentExtensions
 {
-    public static void VerifyTextContains<T>(
+    public static void VerifyTextContaining<T>(
         this IRenderedComponent<T> component,
         string text) where T : Microsoft.AspNetCore.Components.IComponent
         => component.Find($":contains({text})");
