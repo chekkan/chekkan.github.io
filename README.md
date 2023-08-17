@@ -1,5 +1,7 @@
 Blog site for chekkan.com created with jekyll
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67a0e72b-c62d-4d00-914b-8dc6c39dbc8c/deploy-status)](https://app.netlify.com/sites/chekkan/deploys)
+
 ## Getting started
 
 ```shell

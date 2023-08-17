@@ -28,7 +28,7 @@ public class StripeWebHookController : Controller
       var stripeEvent = EventUtility.ConstructEvent(
         json,
         signatureHeader,
-        "whsec_xxxx);
+        "whsec_xxxx");
       switch (stripeEvent.Type)
       {
         case Events.CustomerSubscriptionTrialWillEnd:
@@ -44,6 +44,7 @@ public class StripeWebHookController : Controller
     {
       return BadRequest();
     }
+  }
 }
 ```
 
@@ -96,7 +97,7 @@ var sut = new StripeWebHookController(emailClient, ...)
 
 The test will now start failing because the `EventUtility.ConstructEvent` method won't be able to verify the signature. What value do we provide to `Stripe-Signature` header for the verification to pass?
 
-According to [stripe nodejs repository](https://github.com/stripe/stripe-node#testing-webhook-signing), there is a `stripe.webhooks.generateTestHeaderString` method available in the library. There is n't one as far as I can tell with the [Stripe.net](https://github.com/stripe/stripe-dotnet/) library.
+According to [stripe nodejs repository](https://github.com/stripe/stripe-node#testing-webhook-signing), there is a `stripe.webhooks.generateTestHeaderString` method available in the library. There isn't one as far as I can tell with the [Stripe.net](https://github.com/stripe/stripe-dotnet/) library.
 
 Looking into how the validation logic is implemented, Stripe signature is computed using request body, and a unix timestamp value. The header value has the format `t={timestamp},v1={signature}`. `v1` is represent the schema. 
 
@@ -144,9 +145,9 @@ await JsonSerializer.SerializeAsync(utf8Json,
     {
       @object = new
       {
-    	@object = "subscription",
-    	customer = "cus_123"
-	  }
+      	@object = "subscription",
+      	customer = "cus_123"
+      }
     },
     request = new EventRequest()
   });
