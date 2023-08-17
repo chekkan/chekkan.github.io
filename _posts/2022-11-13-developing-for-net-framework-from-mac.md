@@ -101,7 +101,7 @@ have to RDP into the machine to do some one off configuration changes
 occassionaly. And also say good bye to debugging, or atleast I am not aware of
 any options available for this.
 
-# Conclusion
+## Conclusion
 
 Why bother? Why not give in and use Windows as your development environment?
 
