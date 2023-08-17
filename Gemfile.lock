@@ -88,7 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
-  jekyll (~> 4.3)
+  jekyll (~> 4.3.2)
   jekyll-compose (~> 0.12)
   jekyll-feed (~> 0.12)
   jekyll-postcss-v2
