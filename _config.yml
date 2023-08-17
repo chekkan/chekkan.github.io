@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chekkan.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chekkanz
 github_username:  chekkan
+google_measurement_id: G-KBY0YG0RR7
 
 # Build settings
 theme: minima
