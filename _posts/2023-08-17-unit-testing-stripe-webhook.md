@@ -44,6 +44,7 @@ public class StripeWebHookController : Controller
     {
       return BadRequest();
     }
+  }
 }
 ```
 
