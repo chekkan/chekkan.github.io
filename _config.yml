@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-compose
+  - jekyll-postcss-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
