@@ -7,6 +7,10 @@ bundle install
 ```
 
 ```shell
+npm install
+```
+
+```shell
 bundle exec jekyll serve
 ```
 
