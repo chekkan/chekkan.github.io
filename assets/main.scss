@@ -9,6 +9,9 @@
 @import "minima";
 
 @media (prefers-color-scheme: dark) {
+    a:hover {
+        color: #2a7ae2;
+    }
     pre, code, .highlight, .highlighter-rouge .highlight {
         background-color: rgb(30 41 59);
     }
