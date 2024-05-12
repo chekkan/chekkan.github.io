@@ -8,6 +8,21 @@
 
 @import "minima";
 
+footer {
+    .social-media-list {
+        li {
+            display:inline;
+            margin-right: 1rem;
+        }
+        .svg-icon {
+            padding-right: 0;
+        }
+        .username {
+            vertical-align: text-bottom;
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     a:hover {
         color: #2a7ae2;
