@@ -3,7 +3,7 @@ layout: post
 title: Stimulus JS with ASP.NET Core
 date: 2024-05-12 23:31 +0100
 ---
-[Stimulus JS](https://stimulus.hotwired.dev/) is JavaScript front end framework library 
+[Stimulus JS](https://stimulus.hotwired.dev/) is a JavaScript front end framework library 
 thats popular in th Rails community. Whats different about Stimulus compared to other 
 libraries such as React and Vue JS is its simplicity in the features it comes with. 
 If all you require is sprinkle of javascript interactivity on your website, Stimulus 
@@ -103,6 +103,6 @@ the default action is a `click` event. So, any time someone clicks on the link,
 </a>
 ```
 
-Stimulus JS is very powerful given how powerfull it is with a low learning curve. 
+Stimulus JS is very powerful given how simple it is with a low learning curve. 
 I haven't seen this framework used heavily on ASP.NET stack and there is no reason
 why it should not be considered.
