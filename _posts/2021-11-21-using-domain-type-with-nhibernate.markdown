@@ -126,10 +126,8 @@ to compile.
 
 {% highlight csharp %}
 // with implicit string converter
-var userById = session.Query<User>(u => u.Id == new UserId("chekkan").Value);
+var userById = session.Query<User>(u => u.Id == new UserId("chekkan"));
 
 // with explicit string converter
-var userById = session.Query<User>(u => 
-    (string) u.Id == new UserId("chekkan").Value
-);
+var userById = session.Query<User>(u => (string) u.Id == new UserId("chekkan"));
 {% endhighlight %}
