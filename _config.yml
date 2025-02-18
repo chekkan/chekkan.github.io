@@ -36,6 +36,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-compose
   - jekyll-postcss-v2
+  - jekyll-paginate
+
+# Pagination settings
+paginate: 10
+paginate_path: "/page/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

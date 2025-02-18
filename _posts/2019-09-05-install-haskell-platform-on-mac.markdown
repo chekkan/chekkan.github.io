@@ -3,6 +3,9 @@ layout: post
 title: Install haskell platform on mac with homebrew
 date: '2019-09-05 00:30:00'
 permalink: install-haskell-platform-on-mac
+excerpt: >-
+  The recommended way to install the components of the mac platform is using
+  ghcup to install ghc and cabal-install.
 tags:
 - haskell
 - mac
