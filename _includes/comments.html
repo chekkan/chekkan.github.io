@@ -1,0 +1,90 @@
+{% if page.comments != false %}
+<div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+  <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Comments</h2>
+  
+  {% assign comments = site.data.comments[page.slug] | default: {} %}
+  {% if comments.size > 0 %}
+    {% for comment in comments %}
+      {% assign commentData = comment[1] %}
+      <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+        <div class="mb-2">
+          <strong class="text-gray-900 dark:text-gray-100">{{ commentData.name }}</strong>
+          <span class="ml-4 text-sm text-gray-600 dark:text-gray-400">{{ commentData.date | date: "%B %d, %Y" }}</span>
+        </div>
+        <div class="prose dark:prose-invert">
+          {{ commentData.message | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p class="mb-6 text-gray-600 dark:text-gray-400">No comments yet. Be the first to comment!</p>
+  {% endif %}
+
+  <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Leave a Comment</h3>
+  <form name="comments" netlify netlify-honeypot="bot-field" class="space-y-4">
+    <input type="hidden" name="post-slug" value="{{ page.slug }}" />
+    <p class="hidden">
+      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+    
+    <div>
+      <label for="comment-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-100">Name:</label>
+      <input 
+        type="text" 
+        id="comment-name" 
+        name="name" 
+        required 
+        class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md 
+               bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100
+               focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400
+               placeholder-gray-400 dark:placeholder-gray-500" 
+      />
+    </div>
+
+    <div>
+      <label for="comment-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-100">Email (will not be published):</label>
+      <input 
+        type="email" 
+        id="comment-email" 
+        name="email" 
+        required 
+        class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md 
+               bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100
+               focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400
+               placeholder-gray-400 dark:placeholder-gray-500" 
+      />
+    </div>
+
+    <div>
+      <label for="comment-message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-100">Comment:</label>
+      <textarea 
+        id="comment-message" 
+        name="message" 
+        required 
+        rows="6"
+        class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md 
+               bg-white dark:bg-gray-700 
+               text-gray-900 dark:text-gray-100
+               focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400
+               placeholder-gray-400 dark:placeholder-gray-500"
+      ></textarea>
+    </div>
+
+    <button 
+      type="submit" 
+      class="px-4 py-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600
+             text-white font-medium rounded-md
+             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-900
+             transition-colors duration-200"
+    >
+      Submit Comment
+    </button>
+  </form>
+
+  <p class="mt-4 text-sm italic text-gray-600 dark:text-gray-400">
+    Comments will be reviewed before appearing on the site.
+  </p>
+</div>
+{% endif %} 
