@@ -8,7 +8,7 @@ tags:
 date: 2022-11-06 22:30 +0000
 ---
 
-[StructureMap][] allows you to replace an already registered type mapping by
+[StructureMap](https://structuremap.github.io/) allows you to replace an already registered type mapping by
 clearing all previous registrations for the type and adding new one.
 
 The [example in the documentation][clear_or_replace] clears all previous

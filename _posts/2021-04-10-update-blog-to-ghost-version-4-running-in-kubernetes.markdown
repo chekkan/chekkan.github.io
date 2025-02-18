@@ -20,10 +20,10 @@ exists for ghost running on Kubernetes, or docker containers. `ghost-cli`
 update path seemed desirable compared to the clean install option especially
 because some database migration might be involved I assumed. Also, I didnt
 want to re-configure my site with google analytics etc.
- 
+
 Follow the initial steps of backing up all the important content as mentioned
 in [ghost documentation site][]. Then come back here...
- 
+
 You will have ssh into the docker container in order to copy the content folder
 across.
 

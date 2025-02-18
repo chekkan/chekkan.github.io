@@ -27,6 +27,7 @@ url: "https://chekkan.com" # the base hostname & protocol for your site, e.g. ht
 twitter_username: chekkanz
 github_username:  chekkan
 google_measurement_id: G-KBY0YG0RR7
+show_excerpts: true
 
 # Build settings
 theme: minima

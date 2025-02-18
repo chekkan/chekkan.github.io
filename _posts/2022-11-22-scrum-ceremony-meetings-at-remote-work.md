@@ -9,11 +9,11 @@ tags:
 ---
 
 Since almost everyone is working remotely nowadays, all our meetings are
-conducted virtually via [Zoom][], [Google Meet][], [Slack][] etc. And I have
-developed a distaste for being in meetings. Perhaps we have more meetings now
-compared to what we used to have. This might be because we can't physically go
-over to someone's desk and talk to them to catch up. It has to be a booked slot
-in the calendar. With the booked slot, we now feel obligated to fill the entire
+conducted virtually via [Zoom](https://zoom.us/), [Google Meet](https://meet.google.com/), 
+[Slack](https://slack.com) etc. And I have developed a distaste for being in meetings.
+Perhaps we have more meetings now compared to what we used to have. This might be because
+we can't physically go over to someone's desk and talk to them to catch up. It has to be a 
+booked slot in the calendar. With the booked slot, we now feel obligated to fill the entire
 slot with something to discuss.
 
 If you wanted to discuss something with more than one person, it is difficult
