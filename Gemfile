@@ -35,4 +35,4 @@ gem 'wdm', '~> 0.1.1' if Gem.win_platform?
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "webrick", "~> 1.8.1"
+gem "webrick", "~> 1.9.1"
