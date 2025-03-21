@@ -9,4 +9,7 @@
   {%- if jekyll.environment == 'production' and site.google_measurement_id -%}
     {%- include google-tags.html -%}
   {%- endif -%}
+  {%- if jekyll.environment == 'production' -%}
+    <script defer data-domain="chekkan.com" src="https://plausible.chekkan.com/js/script.js"></script>
+  {%- endif -%}
 </head>
