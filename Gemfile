@@ -38,3 +38,6 @@ gem 'wdm', '~> 0.1.1' if Gem.win_platform?
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.9.1"
+
+# Add explicit ffi gem version to resolve platform-specific issues
+gem "ffi", "~> 1.17.1"
