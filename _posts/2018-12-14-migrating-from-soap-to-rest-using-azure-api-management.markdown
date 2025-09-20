@@ -116,7 +116,7 @@ a time. Azure API Management makes it easy to do this. From the
 **API Design view** , You can select individual operation and edit the backend 
 for that operation.
 
-![Migrate API Management Operation][https://res.cloudinary.com/chekkan/image/upload/v1549403307/Screen_Shot_2018-12-14_at_15.55.36_iontjs.png]
+![Migrate API Management Operation](https://res.cloudinary.com/chekkan/image/upload/v1549403307/Screen_Shot_2018-12-14_at_15.55.36_iontjs.png)
 *Migrate API Management Operation*
 
 You can overwrite the http(s) endpoint and make the operation point to a 
